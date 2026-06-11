@@ -1,0 +1,18 @@
+# Root .gitignore
+frontend/node_modules/
+server/node_modules/
+frontend/dist/
+server/uploads/
+server/.env
+frontend/.env.local
+*.log
+.gemini/
+brain/
+worktrees/
+mcp/
+mcp_config.json
+skills/
+conversations/
+check_users.js
+update_role.js
+check_progress.js

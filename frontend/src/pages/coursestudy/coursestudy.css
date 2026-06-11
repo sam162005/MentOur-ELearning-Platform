@@ -1,0 +1,86 @@
+.course-study-page {
+  padding: 6rem 2rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  max-width: 800px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 70vh;
+}
+
+.course-study-page img {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.course-study-page h2 {
+  font-size: 2.25rem;
+  color: var(--text-main);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.course-study-page h4 {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.course-study-page h5 {
+  font-size: 1rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* Fix high-contrast button styling */
+.course-study-page a {
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #ffffff !important;
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-md);
+  margin-top: 1rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.course-study-page a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  filter: brightness(1.05);
+}
+
+.course-study-page a h2 {
+  font-size: 1.1rem !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+  text-shadow: none !important;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .course-study-page {
+    padding: 3rem 1.5rem;
+    margin: 1.5rem;
+  }
+  .course-study-page h2 {
+    font-size: 1.75rem;
+  }
+}
+
+  

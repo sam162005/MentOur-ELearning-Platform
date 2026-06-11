@@ -1,0 +1,73 @@
+.admin-courses {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+}
+
+.admin-courses .left {
+  flex: 2;
+}
+
+.admin-courses .left h1 {
+  font-size: 2rem;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.admin-courses .left .dashboard-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.admin-courses .right {
+  flex: 1.2;
+}
+
+.admin-courses .right .course-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.admin-courses .right .course-form h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.admin-courses .right .course-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.admin-courses .right .course-form form button {
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+.admin-courses .right .course-form form img {
+  border-radius: var(--radius-md);
+  margin-top: 0.5rem;
+  max-width: 100%;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 992px) {
+  .admin-courses {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
