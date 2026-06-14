@@ -31,7 +31,7 @@ app.use("/api",userRoutes);
 app.use("/api",courseRoutes);
 app.use("/api",adminRoutes);
 
-app.listen(5000,()=>{
-    console.log(`Server is running on http://localhost:${port}`);
+app.listen(port || 5000,()=>{
+    console.log(`Server is running on port ${port || 5000}`);
     connectDb();
 });
