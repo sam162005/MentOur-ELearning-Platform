@@ -5,7 +5,7 @@ import { UserContextProvider } from './context/UserContext.jsx';
 import { CourseContextProvider } from './context/CourseContext.jsx';
 import { ThemeContextProvider } from './context/ThemeContext.jsx';
 
-export const server = 'http://localhost:5000';
+export const server = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
